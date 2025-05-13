@@ -1,0 +1,76 @@
+html,
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-input,
+.form-select,
+.radio-group {
+  display: block;
+}
+
+.form-input {
+  width: 90%;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-input-group {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.submit-btn {
+  margin-top: 1.5rem;
+}
+
+.form-title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-size: 1rem;
+  text-align: center;
+  color: maroon;
+}
+
+.radio-group {
+  margin-left: 0.5rem;
+}
+
+.input-error {
+  margin-left: 10px;
+  color: rgb(150, 0, 0);
+  font-size: 0.75rem;
+}
+
+.input-success {
+  margin-left: 10px;
+  color: rgb(0, 109, 27);
+  font-size: 0.75rem;
+}
+
+.required:after {
+  content: " *";
+  color: rgb(150, 0, 0);
+}
+
+.error {
+  background-color:rgb(255, 112, 112);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+}
+
+.success {
+  background-color: rgb(137, 255, 166);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+}

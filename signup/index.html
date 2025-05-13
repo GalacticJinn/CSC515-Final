@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/styles/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/scripts/register.js" defer></script>
+    </head>
+    <body>
+        <form id="registerForm" method="post">
+            <h1 class="form-title">Registration Form</h1>
+            <div class="form-input-group">
+                <label class="form-label required" for="firstName">First Name:</label>
+                <input class="form-input" name="firstName" id="firstName" placeholder="Enter your first name" >
+                <div id="fNameErr" class="input-error validation"></div>
+            </div>
+            <div class="form-input-group ">
+                <label class="form-label required" for="lastName">Last Name:</label>
+                <input class="form-input" name="lastName" id="lastName" placeholder="Enter your last name" >
+                <div id="lNameErr" class="input-error validation"></div>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label required" for="email">Email:</label>
+                <input class="form-input" name="email" id="email" type="email" placeholder="Enter your email" >
+                <div id="emailErr" class="input-error validation"></div>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label required" for="mobile">Mobile:</label>
+                <input class="form-input" name="mobile" id="mobile"  placeholder="Only 10 digits are allowed" maxlength="10" minlength="9" pattern="[0-9]{9,10}" step="1">
+                <div id="mobileErr" class="input-error validation"></div>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label required">Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="M" >
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="F" >
+                    <label for="female">Female</label>
+                </div>
+                <div id="genderErr" class="input-error validation"></div>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label required" for="city">City:</label>
+                <input class="form-input" name="city" id="city" >
+                <div id="cityErr" class="input-error validation"></div>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label required" for="state">State:</label>
+                <input class="form-input" name="state" id="state" >
+                <div id="stateErr" class="input-error validation"></div>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label required" for="qualification">Qualification:</label>
+                <select class="form-select" name="qualification" id="qualification" >
+                    <option value="" selected>Select Qualification</option>
+                    
+                    <option value="graduation">Graduation</option>
+                    <option value="btech">BTech</option>
+                    <option value="mtech">MTech</option>
+                    <option value="mca">MCA</option>
+                    <option value="bca">BCA</option>
+                </select>
+                <div id="qualificationErr" class="input-error validation"></div>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label required" for="password">Password:</label>
+                <input class="form-input" name="password" id="password" type="password" >
+                <div id="passErr" class="input-error validation"></div>
+            </div>
+            <div id="serverErrors">
+            </div>
+            <button class="submit-btn" name="registerBtn" type="submit">Register</button>
+        </form>
+    </body>
+</html>
